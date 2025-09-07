@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Portfolio de Samiatou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="" class="nom">Samiatou MAMA KONI</a>
+        <div onclick="toggleMenu()">
+            <i class="fa-solid fa-bars ouvrir"></i>
+            <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About me</a></li>
+                <li><a href="#project" onclick="closeMenu()">My projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="samiatou animate-on-scroll">
+            <h3>Hello, it's Me</h3>
+            <h1>Samiatou MAMA KONI</h1>
+            <h3>And i'm <span id="animated-text" class="typing"></span> </h3>
+            <p>Passionnée par l’électronique et le développement web, je conçois des solutions innovantes qui allient technologies embarquées et applications modernes. Mon objectif est de créer des projets pratiques, connectés et esthétiques, du circuit imprimé à l’interface utilisateur.</p>
+            <div class="social0">
+                <button><a href="Cv Samiatou MAMA KONI.pdf" download="Cv Samiatou MAMA KONI.pdf">Download my resume</a></button>
+                <div class="reseau">
+                    <a href="https://www.linkedin.com/in/samiath-mama-koni-4101b12a4" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/toncompte" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/toncompte" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/toncompte" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="img animate-on-scroll animate-right">
+            <img src="profil.png" alt="Photo de profil" width="400">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About me</h2>
+        <div class="about1 animate-on-scroll">
+            <div class="img1 animate-on-scroll">
+                <img src="profil2.jpeg" alt="Photo de profil" width="300">
+             </div>
+            <div class="paragraphe">
+                <p>Je m’appelle Mama Koni Samiatou, technicienne en électronique et systèmes embarqués, passionnée par l’innovation technologique et le développement web. Depuis mes études en électronique jusqu’à ma formation actuelle en licence professionnelle, j’ai toujours eu à cœur de créer des solutions pratiques qui allient matériel et logiciel.</p>
+                <p>Au fil de mes stages et formations, j’ai acquis une solide expérience dans la conception de circuits, la programmation de microcontrôleurs (Arduino, ESP32), et l’intégration de solutions IoT connectées. J’ai également développé des compétences en programmation web moderne, ce qui me permet de concevoir des projets complets.</p>
+                <p>Curieuse, créative et déterminée, je souhaite mettre mes compétences au service de projets innovants qui répondent aux besoins réels des utilisateurs. Mon ambition est de continuer à évoluer dans les domaines de l’électronique, de l’IoT et du développement web, tout en explorant de nouvelles technologies.</p>
+        </div>
+    </section>
+    <hr>
+
+    <section id="project">
+        <h2>My projects</h2>
+        <p class="para animate-on-scroll">Vous trouverez ici une sélection de mes projets réalisés en systèmes embarqués et développement web. Ils reflètent ma passion pour l’innovation et mon envie de créer des solutions complètes, allant du prototype matériel aux applications connectées.</p>
+        <div class="projets">
+            <div class="animate-on-scroll">
+                <img src="projet.jpeg" alt="Project 1" >
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quod vel harum unde. Pariatur modi ipsam nesciunt rerum.</p>
+                <button type="submit"><a href="" target="_blank" rel="noopener">See more</a></button>
+            </div>
+            <div class="animate-on-scroll">
+                <img src="projet.jpeg" alt="Project 2" >
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quod vel harum unde. Pariatur modi ipsam nesciunt rerum.</p>
+                <button type="submit"><a href="" target="_blank" rel="noopener">See more</a></button>
+            </div>
+            <div class="animate-on-scroll">
+                <img src="projet.jpeg" alt="Project 3" >
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quod vel harum unde. Pariatur modi ipsam nesciunt rerum.</p>
+                <button type="submit"><a href="" target="_blank" rel="noopener">See more</a></button>
+            </div>
+            <div class="animate-on-scroll">
+                <img src="projet.jpeg" alt="Project 4" >
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quod vel harum unde. Pariatur modi ipsam nesciunt rerum.</p>
+                <button type="submit"><a href="" target="_blank" rel="noopener">See more</a></button>
+            </div>
+            <div class="animate-on-scroll">
+                <img src="projet.jpeg" alt="Project 5">
+                <h3>Project 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quod vel harum unde. Pariatur modi ipsam nesciunt rerum.</p>
+                <button type="submit"><a href="" target="_blank" rel="noopener">See more</a></button>
+            </div>
+            <div class="animate-on-scroll">
+                <img src="projet.jpeg" alt="Project 6" >
+                <h3>Project 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quod vel harum unde. Pariatur modi ipsam nesciunt rerum.</p>
+                <button type="submit"><a href="" target="_blank" rel="noopener">See more</a></button>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="contact">
+        <h2>Contact me</h2>
+        <form action="" class="animate-on-scroll">
+            <label for="name">Name</label>
+            <input type="text" placeholder="DUPONT" required>
+            <label for="name">First name</label>
+            <input type="text" placeholder="Juien" required>
+            <label for="email">Email</label>
+            <input type="email" placeholder="JuienDupont36_@gmail.com" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+            <button type="submit">SEND</button>
+            <div class="social1">
+                <a href="https://www.linkedin.com/in/samiath-mama-koni-4101b12a4" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/toncompte" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/toncompte" target="_blank" rel="noopener">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/toncompte" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="organisateur">
+            <div class="organise">
+                <h3>Samiatou MAMA KONI</h3>
+                <P>Électronicienne et développeuse web passionnée, je conçois des solutions connectées où innovation et précision se rencontrent.</P>
+            </div>
+            <div class="lienRapide">
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#project">My projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+            <div class="follow">
+                <h3>Follow me</h3>
+                <div class="social2">
+                    <a href="https://www.linkedin.com/in/samiath-mama-koni-4101b12a4" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a   a href="https://github.com/Samiatou04MAMA-KONI" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/ton.nom.utilisateur" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/toncompte" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="ligneBas">
+        <p class="droit">© 2025 Samiatou MAMA KONI. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

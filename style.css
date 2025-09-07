@@ -1,0 +1,707 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(241, 244, 254);
+    overflow-x: hidden;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(4, 1, 74) #f0f0f0; /* pouce | track */
+}
+header{
+    background-color: rgb(4, 1, 74);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 2% 0.5% 5%;
+    color: white;
+}
+.nom {
+    margin: 0% 3%;
+    color: white;
+    text-decoration: none;
+}
+/* Conteneur des icônes hamburger */
+        header div {
+            display: none; /* Caché par défaut sur desktop */
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        header div i {
+            color: white;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+        
+        /* Masquer l'icône de fermeture par défaut */
+        header div .fa-circle-xmark {
+            display: none;
+        }
+        
+        /* Quand le menu est ouvert */
+        header.menu-open div .ouvrir {
+            display: none;
+        }
+        
+        header.menu-open div .fa-circle-xmark {
+            display: inline-block;
+        }
+nav {
+    margin: 0% 3%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;             /* épaisseur de la ligne */
+  left: 0;
+  bottom: -5px;
+  background-color: white; /* même couleur que le texte ou autre */
+  transition: width 0.2s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* la ligne s’étend sur tout le lien */
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+    padding: 5% 0% 0% 0%;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),   /* noir avec opacité 0.5 */
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("background\ 2.jpg") no-repeat center/cover;
+}
+.samiatou{
+    width: 100%;
+    margin: 0% 0% 0% 5%;
+    background-color: rgb(4, 1, 74);
+    padding: 0% 5% 3% 8%;
+}
+.samiatou h3{
+    font-size: 25px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    color: white;
+}
+.samiatou h1{
+    font-size: 30px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    color: rgb(7, 0, 215);
+}
+.samiatou p{
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    color: white;
+}
+.img {
+    box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.5);  
+    margin: 0% 1% 0% 0%; 
+    background-color: rgb(5, 0, 159);
+}
+#about{
+    display: grid;
+    place-items: center;
+    padding: 0% 5% 6% 5%;
+}
+#about h2{
+    font-size: 30px;
+}
+.about1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 0%;  
+    border: 2px solid rgb(4, 1, 74); 
+    padding: 3%;
+}
+.about1 .img1{
+    margin: 0% 0% 0% 2%;   
+}
+.about1 .paragraphe{
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-align: justify;
+    width: 60%;
+    margin: 0% 3% 0% 0%;
+}
+#project{
+    display: grid;
+    place-items: center;
+    padding: 2% 5% 5% 5%;
+    margin-bottom: 5%;
+
+}
+#project h2{
+    font-size: 30px;
+}
+#project .para{
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.projets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    width: 80%;
+}
+.projets div {
+    background-color: rgb(5, 0, 159);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    border-radius: 20px;
+    /*box-shadow: 0px 0px 20px 10px rgb(4, 1, 74, 0.5); */
+    box-shadow: -13px  13px 10px rgb(4, 1, 74, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* transition douce */
+}
+.projets div:hover {
+    transform: scale(1.05); /* zoom léger */
+    box-shadow: -25px 25px 20px rgb(4, 1, 74, 0.5); /* ombre plus forte */
+}
+.projets div img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.projets div h3{
+    color: white;
+}
+.projets div p{
+    text-align: center;
+    line-height: 25px;
+    width: 90%;
+    margin-top: -1%;
+    color: white;
+}
+.projets div button{
+    width: 30%;
+    padding: 2%;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-bottom: 10%;
+    border: none;
+    background-color: rgb(241, 244, 254);
+    cursor: pointer;
+}
+.projets div button a{
+    text-decoration: none;
+    color: rgb(7, 0, 215);
+}
+.projets div button:hover{   
+    color: rgb(7, 0, 215);
+    font-weight: bolder;
+}
+#contact{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 8%;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 40%;
+    padding: 4% 5%;
+    background-color: rgb(4, 1, 74);
+    gap: 10px;
+    border-radius: 10px;
+}
+label{
+    color: white;
+    font-size: 15px;
+}
+input{
+    border-radius: 5px;
+    padding: 6px;
+    background-color: rgb(241, 244, 254);
+}
+input:focus{
+    background-color: rgb(241, 244, 254);
+    border: 4px solid rgb(5, 0, 159);   
+    outline: none;
+}
+textarea{
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(241, 244, 254);
+}
+textarea:focus{
+    outline: none;
+    border: 4px solid rgb(5, 0, 159);
+}
+form button {
+    width: 20%;
+    background-color: rgb(241, 244, 254);
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgb(5, 0, 159);   
+    color: white;
+}
+.social1{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0% 35%;
+}
+.social0{
+    display: flex;
+    gap: 30px;
+}
+.social0 .reseau{
+    display: flex;
+    gap: 20px;
+}
+.social0 button{
+    padding: 2.5px;
+    background-color: rgb(4, 1, 74);
+    border: 2px solid white;
+    color: rgb(7, 0, 215);
+    border-radius: 5px;
+}
+.social0 button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.social0 button:hover{
+    background-color: white;
+    border: none;
+}
+.social0 button a:hover{
+    color: rgb(4, 1, 74);
+}
+i{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+i:hover{
+    color: rgb(7, 0, 215);
+}
+footer{
+    display: grid;
+    place-items: center;
+    background-color: rgb(4, 1, 74);
+    padding: 2% 0% 0% 10%;
+    width: 100%;
+}
+footer h3{
+    color: rgb(7, 0, 215);
+}
+.organisateur{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0% 0% 0% 5%;
+}
+.organise p{
+    width: 70%;
+    text-align: justify;
+    word-spacing: -1px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    color: white;
+}
+.lienRapide ul{
+    margin-left: -38px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.lienRapide ul li {
+    list-style-type: none;
+}
+.lienRapide ul li a{
+    color: white;
+    text-decoration: none;
+}
+.social2{
+    display: flex;
+    gap: 20px;
+}
+hr{
+    width: 30%;
+    border: -1px solid rgb(4, 1, 74);
+    background-color: rgb(4, 1, 74);
+}
+.ligneBas{
+    width: 100%;
+    margin: 0% 10% 0% 0%;
+    border: -2px solid rgba(255, 255, 255, 0.173);
+}
+.droit{
+    color: rgb(7, 0, 215);
+}
+/* État initial : invisible et décalé */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px); /* vient du bas */
+  transition: all 0.7s ease-out;
+}
+
+/* Quand l’élément devient visible */
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Exemple pour venir de la gauche */
+.animate-left {
+  transform: translateX(-50px);
+}
+
+.animate-left.visible {
+  transform: translateX(0);
+}
+
+/* Exemple pour venir de la droite */
+.animate-right {
+  transform: translateX(50px);
+}
+
+.animate-right.visible {
+  transform: translateX(0);
+}
+.typing {
+  border-right: 2px solid white; /* Curseur */
+  display: inline-block;
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* RESPONSIVE DESIGN */
+        
+        /* Tablettes (768px - 1024px) */
+        @media screen and (max-width: 1024px) {
+            nav ul {
+                gap: 50px;
+            }
+            
+            #hero {
+                flex-direction: column;
+                margin: 3% 0% 5% 0%;
+            }
+            
+            .samiatou {
+                width: 90%;
+                margin: 0 5%;
+                order: 2;
+                text-align: center;
+            }
+            
+            .img {
+                width: 60%;
+                margin: 0 auto 3% auto;
+                order: 1;
+            }
+            
+            .about1 {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .about1 .paragraphe {
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            .projets {
+                grid-template-columns: repeat(2, 1fr);
+                width: 90%;
+            }
+            
+            form {
+                width: 60%;
+            }
+            
+            .organisateur {
+                gap: 3%;
+            }
+        }
+
+        /* Tablettes petites et grands mobiles (481px - 768px) */
+        @media screen and (max-width: 768px) {
+            
+            header { 
+                padding: 3% 10%;
+                position: relative;
+            }         
+            /* Afficher le hamburger sur mobile */
+            header div {
+                display: block;
+            }
+            
+            /* Masquer la navigation par défaut sur mobile */
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: rgb(4, 1, 74);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                z-index: 1000;
+                margin: 0;
+            }
+            
+            /* Navigation visible quand menu ouvert */
+            header.menu-open nav {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+                padding: 20px 0;
+                margin: 0;
+            }
+             nav ul li {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            nav ul li:last-child {
+                border-bottom: none;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 15px 20px;
+                width: 100%;
+                transition: background-color 0.3s ease;
+            }
+            
+            nav ul li a:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            
+            nav ul li a::after {
+                display: none; /* Désactiver l'underline sur mobile */
+            }
+            
+            .samiatou h1 {
+                font-size: 24px;
+            }
+            
+            .samiatou h3 {
+                font-size: 20px;
+            }
+            
+            .projets {
+                grid-template-columns: 1fr;
+                width: 95%;
+            }
+            
+            form {
+                width: 50%;
+            }
+            .social2{
+                padding: 0% 0% 0% 35%;
+            }
+            .organisateur {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                text-align: center;
+            }
+            .organise p{
+                text-align: center;
+                padding: 0% 0% 0% 16%;
+            }
+            #about h2, #project h2, #contact h2 {
+                font-size: 24px;
+            }
+            .ligneBas{
+                margin: 0;
+            }
+        }
+
+        /* Mobiles (320px - 480px) */
+        @media screen and (max-width: 480px) {
+            header {
+                padding: 2% 3%;
+            }
+            
+            .nom {
+                font-size: 16px;
+                margin: 0;
+            }
+            
+            .samiatou {
+                width: 95%;
+                padding: 6% 4%;
+                margin: 0 2.5%;
+            }
+            
+            .samiatou h1 {
+                font-size: 20px;
+                word-spacing: 2px;
+            }
+            
+            .samiatou h3 {
+                font-size: 16px;
+                word-spacing: 2px;
+            }
+            
+            .samiatou p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            
+            .img {
+                width: 80%;
+            }
+            
+            #about, #project, #contact {
+                padding: 5% 3%;
+            }
+            
+            .about1 {
+                padding: 5%;
+            }
+            
+            .about1 .paragraphe {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            
+            #project .para {
+                width: 95%;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            
+            .projets {
+                width: 100%;
+            }
+            
+            .projets div img {
+                height: 150px;
+            }
+            
+            .projets div h3 {
+                font-size: 16px;
+            }
+            
+            .projets div p {
+                font-size: 13px;
+                line-height: 20px;
+            }
+            
+            .projets div button {
+                width: 50%;
+                font-size: 13px;
+            }
+            
+            form {
+                width: 95%;
+                padding: 8% 5%;
+            }
+            
+            input, textarea {
+                padding: 10px;
+                font-size: 16px; /* Évite le zoom sur iOS */
+            }
+            
+            form button {
+                width: 40%;
+                padding: 12px;
+            }
+            
+            .social0 {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .social0 button {
+                width: 200px;
+                text-align: center;
+            }
+            
+            .social1 {
+                gap: 15px;
+            }
+            
+            i {
+                font-size: 18px;
+            }
+            
+            footer {
+                padding: 5% 3%;
+            }
+            
+            .organise p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        /* Très petits écrans (max 320px) */
+        @media screen and (max-width: 320px) {
+            .samiatou h1 {
+                font-size: 18px;
+            }
+            
+            .samiatou h3 {
+                font-size: 14px;
+            }
+            
+            .samiatou p {
+                font-size: 13px;
+            }
+            
+            .projets div button {
+                width: 60%;
+                font-size: 12px;
+            }
+            
+            form {
+                width: 98%;
+            }
+        }

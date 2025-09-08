@@ -558,6 +558,9 @@ hr{
             .social2{
                 padding: 0% 0% 0% 35%;
             }
+            footer {
+                padding: 0%;
+            }
             .organisateur {
                 grid-template-columns: 1fr;
                 gap: 10px;
@@ -720,6 +723,7 @@ hr{
             }
 
         }
+
 
 
 

@@ -537,6 +537,9 @@ hr{
                 grid-template-columns: 1fr;
                 width: 95%;
             }
+            #contact{
+                
+            }
             
             form {
                 width: 50%;
@@ -706,4 +709,5 @@ hr{
             }
 
         }
+
 

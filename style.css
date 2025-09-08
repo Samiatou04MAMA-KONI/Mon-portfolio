@@ -435,7 +435,7 @@ hr{
                 order: 1;
             }
             #about{
-                margin: 0% 0% 10% 0%;
+                margin: 0% 0% 5% 0%;
             }
             .about1 {
                 flex-direction: column;
@@ -539,15 +539,13 @@ hr{
                 font-size: 20px;
             }
             #project {
-                margin: 0% 0% 20% 0%;
+                margin: 0% 0% 40% 0%;
             }
             .projets {
                 grid-template-columns: 1fr;
                 width: 95%;
             }
-            #contact{
-                margin: 100% 0% 10% 0%;
-            }
+            
             
             form {
                 width: 50%;
@@ -717,6 +715,7 @@ hr{
             }
 
         }
+
 
 
 

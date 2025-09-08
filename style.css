@@ -444,6 +444,10 @@ hr{
                 width: 100%;
                 margin-top: 20px;
             }
+
+            #project{
+                margin: 0% 0% 20% 0%;
+            }
             
             .projets {
                 grid-template-columns: repeat(2, 1fr);
@@ -711,6 +715,7 @@ hr{
             }
 
         }
+
 
 
 

@@ -547,12 +547,13 @@ hr{
             }
 
             #contact{
-                margin: 20% 0% 0% 0%;
+                margin: 15% 0% 0% 0%;
                 padding: 0% 0% 20% 0%;
             }
             
             form {
                 width: 50%;
+                padding: 5%;
             }
             .social2{
                 padding: 0% 0% 0% 35%;
@@ -719,6 +720,7 @@ hr{
             }
 
         }
+
 
 
 

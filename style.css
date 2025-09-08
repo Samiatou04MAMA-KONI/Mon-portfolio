@@ -547,8 +547,8 @@ hr{
             }
 
             #contact{
-                margin: 100% 0% 0% 0%;
-                padding: 10% 0%;
+                margin: 10% 0% 0% 0%;
+                padding: 0% 0% 10% 0%;
             }
             
             form {
@@ -719,6 +719,7 @@ hr{
             }
 
         }
+
 
 
 

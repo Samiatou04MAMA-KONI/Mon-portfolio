@@ -712,7 +712,9 @@ hr{
             .samiatou h3 {
                 font-size: 14px;
             }
-            
+            #project{
+                margin: 100% 0% 0% 0%;
+            }
             .samiatou p {
                 font-size: 13px;
             }
@@ -727,6 +729,7 @@ hr{
             }
 
         }
+
 
 
 

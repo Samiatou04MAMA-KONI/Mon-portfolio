@@ -630,9 +630,7 @@ hr{
                 font-size: 14px;
                 line-height: 24px;
             }
-            #project{
-                margin: 80% 0% 0% 0%;
-            }
+            
             #project .para {
                 width: 95%;
                 font-size: 14px;
@@ -659,10 +657,6 @@ hr{
             .projets div button {
                 width: 50%;
                 font-size: 13px;
-            }
-
-            #contact{
-                margin: 0% 0% 50% 0%;
             }
             
             form {
@@ -727,12 +721,19 @@ hr{
                 width: 60%;
                 font-size: 12px;
             }
+            #project{
+                margin: 100% 0% 0% 0%;
+            }
+            #contact{
+                margin: 0% 0% 50% 0%;
+            }
             
             form {
                 width: 98%;
             }
 
         }
+
 
 
 

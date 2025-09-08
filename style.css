@@ -434,7 +434,9 @@ hr{
                 margin: 0 auto 3% auto;
                 order: 1;
             }
-            
+            #about{
+                margin: 0% 0% 10% 0%;
+            }
             .about1 {
                 flex-direction: column;
                 text-align: center;
@@ -715,6 +717,7 @@ hr{
             }
 
         }
+
 
 
 

@@ -532,7 +532,9 @@ hr{
             .samiatou h3 {
                 font-size: 20px;
             }
-            
+            #project {
+                margin: 0% 0% 10% 0%;
+            }
             .projets {
                 grid-template-columns: 1fr;
                 width: 95%;
@@ -709,6 +711,7 @@ hr{
             }
 
         }
+
 
 
 

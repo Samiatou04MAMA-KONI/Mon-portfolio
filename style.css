@@ -539,13 +539,16 @@ hr{
                 font-size: 20px;
             }
             #project {
-                margin: 0% 0% 100% 0%;
+                margin: 0% 0% 50% 0%;
             }
             .projets {
                 grid-template-columns: 1fr;
                 width: 95%;
             }
-            
+
+            #contact{
+                margin: 0% 0% 50% 0%;
+            }
             
             form {
                 width: 50%;
@@ -715,6 +718,7 @@ hr{
             }
 
         }
+
 
 
 

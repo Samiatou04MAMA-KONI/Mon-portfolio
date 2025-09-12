@@ -99,31 +99,31 @@ nav ul li a:hover::after {
 .samiatou{
     width: 100%;
     margin: 0% 0% 0% 5%;
-    background-color: rgb(4, 1, 74);
+    /*background-color: rgb(4, 1, 74);*/
     padding: 0% 5% 3% 8%;
 }
 .samiatou h3{
-    font-size: 55px;
+    font-size: 50px;
     word-spacing: 4px;
     letter-spacing: 1px;
     color: white;
 }
 .samiatou h1{
-    font-size: 70px;
+    font-size: 60px;
     word-spacing: 4px;
     letter-spacing: 1px;
     color: rgb(7, 0, 215);
 }
-.samiatou p{
+/*.samiatou p{
     word-spacing: 3px;
     letter-spacing: 0.5px;
     line-height: 30px;
     color: white;
-}
+}*/
 .img {
-    box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.5);  
+    /*box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.5);  */
     margin: 0% 1% 0% 0%; 
-    background-color: rgb(5, 0, 159);
+   /* background-color: rgb(5, 0, 159);*/
 }
 #about{
     display: grid;
@@ -728,6 +728,7 @@ hr{
             }
 
         }
+
 
 
 

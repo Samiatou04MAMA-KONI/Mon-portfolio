@@ -103,13 +103,13 @@ nav ul li a:hover::after {
     padding: 0% 5% 3% 8%;
 }
 .samiatou h3{
-    font-size: 50px;
+    font-size: 45px;
     word-spacing: 4px;
     letter-spacing: 1px;
     color: white;
 }
 .samiatou h1{
-    font-size: 60px;
+    font-size: 55px;
     word-spacing: 4px;
     letter-spacing: 1px;
     color: rgb(7, 0, 215);
@@ -728,6 +728,7 @@ hr{
             }
 
         }
+
 
 
 

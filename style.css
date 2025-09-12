@@ -94,6 +94,7 @@ nav ul li a:hover::after {
       rgba(0, 0, 0, 0.5)
     ),
     url("background\ 2.jpg") no-repeat center/cover;
+    width: 100%;
 }
 .samiatou{
     width: 100%;
@@ -727,6 +728,7 @@ hr{
             }
 
         }
+
 
 
 
